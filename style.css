@@ -1,0 +1,124 @@
+body {
+
+}
+.tic-tac-toe {
+    width: 1000px;
+    height: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.field {
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+    grid-gap: 10px;
+}
+.cell {
+    background-color: #fff;
+    height: 80px;
+    width: 80px;
+    outline: 10px #777 solid;
+    position: relative;
+}
+
+.cross {
+    position: relative;
+    width: 90px;
+    height: 90px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.cross::after {
+    content: "";
+
+    width: 10px;
+    height: 90px;
+    background-color: #555;
+    position: absolute;
+    top: -4px;
+    left: 35px;
+
+    transform: rotate(45deg);
+}
+
+.cross::before {
+    content: "";
+
+    width: 10px;
+    height: 90px;
+    background-color: #555;
+    position: absolute;
+    top: -4px;
+    left: 35px;
+
+    transform: rotate(-45deg);
+}
+
+.zero {
+    height: 90px;
+    width: 90px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.zero::before {
+    content: "";
+    height: 54px;
+    width: 54px;
+    border-radius: 50%;
+    border: 10px #555 solid;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+}
+
+.points {
+    width: 500px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+
+}
+.point {
+    width: 250px;
+}
+.points span {
+    font-family: Arial;
+    font-size: 90px;
+    display: block;
+    width: 250px;
+    text-align: center;
+    color: #2a52be;
+}
+
+.btn {
+    width: 250px;
+    height: 35px;
+    background-color: #2a52be;
+    border: none;
+    color: #fff;
+    font-family: Arial;
+    text-transform: uppercase;
+    font-size: 19px;
+}
+
+.btn:hover {
+    background-color: #5c74c0;
+}
+
+.btn:active {
+    background-color: #1941ad;
+    color: #1941ad;
+}
+
+.btn a {
+    text-decoration: none;
+    color: inherit;
+
+}
